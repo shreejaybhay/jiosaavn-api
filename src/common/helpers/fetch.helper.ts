@@ -34,10 +34,10 @@ export const useFetch = async <T>({ endpoint, params, context }: FetchParams): P
       'Referer': 'https://www.jiosaavn.com/',
       'Origin': 'https://www.jiosaavn.com',
       'Accept': 'application/json, text/plain, */*',
-      'Accept-Language': 'en-US,en;q=0.9',
+      'Accept-Language': 'en-IN,en;q=0.9,hi;q=0.8',
       'Accept-Encoding': 'gzip, deflate, br',
       'Connection': 'keep-alive',
-      'cookie': 'CT=1',
+      'cookie': 'CT=1; DL=hindi; geo=IN; gdpr_acceptance=true; cc=IN',
     }
   })
 
