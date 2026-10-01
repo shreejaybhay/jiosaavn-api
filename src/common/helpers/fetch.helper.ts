@@ -28,7 +28,17 @@ export const useFetch = async <T>({ endpoint, params, context }: FetchParams): P
   const randomUserAgent = userAgents[Math.floor(Math.random() * userAgents.length)]
 
   const response = await fetch(url.toString(), {
-    headers: { 'Content-Type': 'application/json', 'User-Agent': randomUserAgent }
+    headers: {
+      'Content-Type': 'application/json',
+      'User-Agent': randomUserAgent,
+      'Referer': 'https://www.jiosaavn.com/',
+      'Origin': 'https://www.jiosaavn.com',
+      'Accept': 'application/json, text/plain, */*',
+      'Accept-Language': 'en-US,en;q=0.9',
+      'Accept-Encoding': 'gzip, deflate, br',
+      'Connection': 'keep-alive',
+      'cookie': 'CT=1',
+    }
   })
 
   const data = await response.json()
