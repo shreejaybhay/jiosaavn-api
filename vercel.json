@@ -1,9 +1,9 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "rewrites": [{ "source": "(.*)", "destination": "/api" }],
+  "rewrites": [{ "source": "/(.*)", "destination": "/api" }],
   "headers": [
     {
-      "source": "(.*)",
+      "source": "/(.*)",
       "headers": [
         {
           "key": "Access-Control-Allow-Origin",
